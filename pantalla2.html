@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Hackaton</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<style>
+  .cardGrande{
+    width:100%;
+    height: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    background: #FFFFFF;
+    color:#5B5252;
+    padding:20px;
+  }
+
+  .cardChica{
+    width:100%;
+    height: 130px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    background: #FFFFFF;
+    color:#5B5252;
+    padding:10px;
+    padding-top:5px;
+    margin-top:30px
+  }
+
+  .icono{
+    width:60px;
+    height:60px;
+    text-align: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:auto;
+
+  }
+</style>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Menu -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Andreani Identification System </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Busqueda Avanzada</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Organizaciones</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Procesos</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Validaciones Compuestas</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Reglas de Validación</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Cerrar Sesión</a>
+      </div>
+    </div>
+    <!-- /#Menu -->
+
+    <!-- Contenido -->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="navbar-toggler" id="menu-toggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      <div class="container-fluid">
+        <h4 class="text-center" style="margin-top:10px">Elegi la validacion correspondiente:</h4>
+          <div class="row">
+            <div class="col-6">
+              <a href="#">
+                <div class="card cardChica">
+                  <h5 class="text-center">Prueba de Vida</h5>
+                  <img class="icono" src="https://www.iconfinder.com/data/icons/science-glyphs-vol-5/52/life__heart__beat__health-512.png" alt="">
+
+                </div>  
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="#">
+                <div class="card cardChica">
+                  <h5 class="text-center">QR & Token</h5>
+                  <img class="icono" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEUAAAD///+FhYVfX19WVlbs7OyqqqokJCStra3v7+8dHR2enp7z8/MvLy9qamri4uLNzc0+Pj6Ojo7b29u6urrPz882NjYXFxfCwsKysrJGRkYSEhInJyeAgIBRUVFnZ2d3d3eYmJiTk5MsaN68AAAD2UlEQVR4nO3dbVeqQBSGYSLFFygLMk1T6/z/H3k+nLVOsh+FcRh0sPv5GpuZK1stYPZIkgTL40Njcikozh/8GG5aAYNQChBGF4RSgDC6IJQChNEFoRQgjC4IpQBhdBmMcJM6pdw2CotsavJtz7C7RLgt3aa1cRCmzR/F/3w2Csdy3qnjeU8LPx0L04DCyVWFE4QIESJEiBBhX8IqM8mPLrRuJixyO63KW5jJD2cRCGdy6gwhQoS+woXN+N6Ecsju7oU/QyNEiBAhQoQIEYYT6mLKz5Xj7YR66txbWMxMjoC3Ez6M7bSOnjzE9ZzGV9gUhAh7FrrdH0YiLKYfJt87uwacmSOmyyEJNd3W8REi/F3C0vFczb0YoYWuvRilg3D15JR3Key3Y+jdbVorB6F3BtMT5R2EUoAwuiCUAoTRBaEUIIwuv0yoTzE0CKMLQgnCQBmFyr72+KOjMN0Hm1dyfpRO6SgMGIS+QYgwXBD6BiHCcEHoG23riUdY2fXpTGYytuvTmqxsT8Mq99ms7X6Z89tnzgq11WtsD3lx+IDaJ9vUqXA2h5ZhM6nQmUylamYPWbYDVz5Ch8XZ55ZxT3R8IESIECFChAgRIkSIEOGVhHIH7CD0uj8MIEyXLybJxGSejk1mm9W8ltVoZo+RVEm9Zp58+Ahl6H3ROGzx5fDL12Fe7SGj9t91x/0W3kP7dUEjRIgQIUKECBEiRIgQYQihbMS7nvDioV32H+owX48mI3sjrcvTLkI5bVkt66me7TEtOTx5CSX6KMFLKFlL0aL9vJfHR6i7dAMJpfFggRAhQoQIESJEiBAhQoSRCB1akXX/o4Mwl9VbP+H8wiR22XutveCSyhadaEGXQ75k+tohv7aTCdDO39duBM1F+/EDBmG4IOwrCMMFYV9BGC4I+0ryHCqHP5EKwyXktyghRIgQoYOwSO3ObXlroW6p1jg8xXir/dylU8E73b91XoMwQRg0CBGeCsIEYdAgjEa4nTgteMjrLYYjDPN+i5iFN3wbEkKEQxRKj/CwhKl9i5dkl8u3pNk767T+MccldIj06u9bCgYnvNJ+C4QDFvb8HtIIhD2/SzYCYc/vA0aIECFChAgRDl749FrPeybXgHJNqIvCEQs1egko0RZz2bgc+P7w2kK9rRkvTF7s34b9S5GKyIWStt0ILk+DECIclLCyHTD50f/zuxA2BiFChAgRIkT4G4TNvRgxCzdtC7P/Um47C7NpPR8jO0h+sfDE+57CpXsnu8OKrwpfR/ufbN6kIm6hPpVR4bp52DsQ6qeGECFChAgRIkSIECFChOGFfwFryMx7AETgWgAAAABJRU5ErkJggg==" alt="">
+                </div>  
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="#">
+                <div class="card cardChica">
+                  <h5 class="text-center">Huella Dactilar</h5>
+                  <img class="icono" src=" data:image/png;base64,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" alt="">
+                 
+                </div>  
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="#">
+                <div class="card cardChica">
+                  <h5 class="text-center">Documento Nacional</h5>
+                                    <img class="icono" src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAdVBMVEX///8AAAAeHh7h4eH7+/ujo6MEBARcXFzk5OQiIiI5OTn39/fu7u7n5+diYmIzMzPBwcEZGRlOTk4PDw+9vb0MDAx9fX1vb29nZ2fZ2dktLS3x8fFXV1dISEhzc3PJycmsrKyEhISRkZFBQUEnJyeZmZmVlZWqyTOuAAACvklEQVR4nO2Za3eiMBBAoTxMAJWHgFG30q7t//+J2xbjChuYCU62u+fM/eo4uZJkMkTPYxiGYRiGYRiGYSY4qryLiOhydbQcXjVJUcdk1EXyEtj8+hcZ+8TEl1f0UxAn8uG/FFZr3PjrHy6G/6REGaQbV+P7fpsiBKLanUDdweNnibvxff9nBgp0+gHEslzNU15DazDwtqnqHBTQKyBugjScxQue+tCnwJuPTINWGzTQ+Ec9A3t4vdwJgGlPeg6gYrC+9IHVGUxqI+DlVR97gXZiIPFJbQR0rIRilyQljWUBm6RZ22/zFq4ubgRuux8R6kbAAhYgEAgzITLMdLsRSHerrZTbTb5Q4VEBsbnW8mqPbOxoBcRdm4hr7GgFhm2isbELRWBEhBQCu+pewHhSi+TJSCIIBMKVP+B55ntjdJ6HBLLtMOnWUPudCgg5TCrFn99zOgUYAaeLEDMFEI/tgtHLGthakwvk8DZ0KxDuBw9gyXHwYClel7/HP31DKf4waPVh1CxYgQQCXnp+/jyOm/PEG5vbs6AfYrYhcVqIMDgtxf+AwMfjv02qeRqcTsFXP6gzTvSFLhfhrR/ULOkLHxAQhmtD+75wuYD52hB14UcjsKtMAtYH0mKBcT+oMfWFTgTGzYjGtilZLDBuxzTjtmy8DUU4nxctAFU4zbgQJWI+L7nAOG7q8/9PAKrxGmdTANV4jbNFSAULoPPqwlMoWgFV9HlN75UDskMfGHe0AtH1L5MDVMJTffonpI9AXX+XX4LneKNLyTZS5h1oj4r0+P4b6HoudGxcmGuQPcXtr2DE0konGgAaWsSL7XniAKZAohZWZGzCKKg6zPhe+Oro3+PqHXmzEEZOZkF2+JsNtSnghHYUe6vCkqr38iDhDYZDHso3ZX2xk64nWgF7RGb7HsMwDMMwDMMwDMMwzF/kFyaRLlymILzFAAAAAElFTkSuQmCC" alt="">
+
+                  
+                </div>  
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="#">
+                <div class="card cardChica">
+                  <h5 class="text-center">Imagen Biometrica</h5>
+                  <img class="icono" src="https://www.iconfinder.com/data/icons/antivirus-internet-security-thick-version/33/facial_recognition-512.png" alt="">
+
+                  
+                </div>  
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="#">
+                <div class="card cardChica">
+                  <h5 class="text-center">Personalizado</h5>
+                  <img class="icono" src="https://www.iconfinder.com/data/icons/linewerk-interface-basics/24/ico-settings-512.png" alt="">
+                </div>  
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
