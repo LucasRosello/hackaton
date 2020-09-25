@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Hackaton</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<style>
+  .cardGrande{
+    width:100%;
+    height: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    background: #FFFFFF;
+    color:#5B5252;
+    padding:20px;
+  }
+</style>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Menu -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Andreani Identification System </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Busqueda Avanzada</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Organizaciones</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Sistemas</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Procesos</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Validaciones Compuestas</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Reglas de Validación</a>
+      </div>
+    </div>
+    <!-- /#Menu -->
+
+    <!-- Contenido -->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="navbar-toggler" id="menu-toggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <p>Inicio</p>
+        <p>Icono</p>
+      </nav>
+      <div class="container-fluid">
+        <h3 class="mt-4">Reglas de Validación</h3>
+        <p>Aca podes ver todas tus reglas de validacion
+        </p>
+        <a href="pantalla1.html">
+          <div class="card cardGrande">
+            <h3 class="text-center">Crear Nueva Regla</h3>
+          </div>  
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
